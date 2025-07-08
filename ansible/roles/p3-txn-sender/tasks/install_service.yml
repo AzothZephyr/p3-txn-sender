@@ -19,6 +19,7 @@
     dest: /home/{{ user }}/p3-txn-sender
     version: main
     force: yes
+
 - name: Build the program
   become: true
   become_user: "{{ user }}"
@@ -41,10 +42,12 @@
   become: true
   become_user: root
   shell: sudo systemctl daemon-reload
+
 - name: enable service
   become: true
   become_user: root
   shell: sudo systemctl enable p3-txn-sender.service
+
 - name: start service
   become: true
   become_user: root
