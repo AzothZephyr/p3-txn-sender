@@ -1,3 +1,4 @@
 .vscode/
 /target
 /test-ledger
+ansible/roles/p3-txn-sender/files/id.json
