@@ -9,8 +9,8 @@
     rpc_url:
     grpc_url:
     x_token: 
-    tpu_connection_pool_size:
-    num_leaders
+    tpu_connection_pool_size: 5
+    num_leaders: 5
     leader_offset: 0
     datadog_api_key: 
     datadog_site: 
